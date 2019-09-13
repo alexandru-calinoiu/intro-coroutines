@@ -1,6 +1,7 @@
 package tasks
 
 import contributors.*
+import retrofit2.awaitResponse
 
 suspend fun loadContributorsSuspend(service: GitHubService, req: RequestData): List<User> {
     val repos = service
